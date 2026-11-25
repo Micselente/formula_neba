@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3e9">
+  <meta name="description" content="Формула Неба — концепция реставрации жилого корпуса Офицерской воздухоплавательной школы и создания центра инженерного творчества.">
+  <meta property="og:title" content="Формула Неба — проект для форума «Наследие»">
+  <meta property="og:description" content="Инженерный центр в историческом здании Офицерской воздухоплавательной школы в Санкт-Петербурге.">
+  <meta property="og:image" content="assets/hero.webp">
+  <link rel="icon" href="assets/logo.webp" type="image/webp">
+  <link rel="preload" href="assets/hero.webp" as="image" fetchpriority="high">
+  <title>Формула Неба — проект для форума «Наследие»</title>
+  <link rel="preload" href="assets/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="project.min.css">
+  <script src="project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Формула Неба — в начало">
+        <img src="assets/logo.webp" alt="" width="36" height="35">
+        <span>Формула Неба<small>ПРОЕКТ «НАСЛЕДИЕ»</small></span>
+      </a>
+      <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Меню<span aria-hidden="true"></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Навигация по проекту">
+        <a href="./">Сайт школы</a>
+        <a href="#center">Пространство</a>
+        <a href="#history">История</a>
+        <a class="nav-button" href="#materials">Материалы проекта</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/hero.webp" alt="" width="1672" height="941" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="shell hero-inner">
+        <p class="eyebrow hero-eyebrow">IX Молодёжный форум «Наследие» <span>·</span> 2026</p>
+        <h1 id="hero-title">Формула<br><span>Неба</span></h1>
+        <p class="hero-summary">Будущий центр дополнительного образования для школьников и студентов. Роботы, электроника и летательные модели в историческом здании воздухоплавательной школы.</p>
+        <div class="hero-actions">
+          <a class="button button-accent" href="#programs">Выбрать направление</a>
+          <a class="hero-link" href="#center">Заглянуть в центр</a>
+        </div>
+      </div>
+      <div class="shell hero-caption"><span>Визуализация проекта</span></div>
+    </section>
+    <section class="fact-band" aria-label="Об объекте">
+      <dl class="shell facts">
+        <div><dt>10–17 лет</dt><dd>Основная аудитория — школьники</dd></div>
+        <div><dt>4 направления</dt><dd>От робототехники до аэродинамики</dd></div>
+        <div><dt>Парковая, 7Р</dt><dd>Санкт-Петербург</dd></div>
+      </dl>
+    </section>
+
+    <section class="section programs" id="programs" aria-labelledby="programs-title">
+      <div class="shell">
+        <div class="program-intro">
+          <div>
+            <p class="eyebrow section-label">Дополнительное образование</p>
+            <h2 id="programs-title">От идеи <em>до полёта</em></h2>
+          </div>
+          <p>Четыре направления будущего центра. На занятиях ребята смогут пройти путь от первого эскиза до рабочего прототипа.</p>
+        </div>
+        <div class="program-grid">
+          <details class="program-card">
+            <summary><span class="program-icon icon-robot" aria-hidden="true"></span><h3>Робототехника</h3><span class="program-description">Собирать механизмы и программировать их движения.</span><span class="program-more">Пример проекта</span></summary>
+            <p>Собрать робота на колёсах и настроить датчики так, чтобы он объезжал препятствия.</p>
+          </details>
+          <details class="program-card">
+            <summary><span class="program-icon icon-circuit" aria-hidden="true"></span><h3>Электроника</h3><span class="program-description">Работать с цепями, датчиками и микроконтроллерами.</span><span class="program-more">Пример проекта</span></summary>
+            <p>Собрать схему, которая включает подсветку при падении уровня освещённости, и проверить её в разных условиях.</p>
+          </details>
+          <details class="program-card">
+            <summary><span class="program-icon icon-model" aria-hidden="true"></span><h3>3D-моделирование</h3><span class="program-description">Создавать цифровые чертежи и модели деталей.</span><span class="program-more">Пример проекта</span></summary>
+            <p>Спроектировать крепление для двигателя небольшой модели и проверить, как оно стыкуется с корпусом.</p>
+          </details>
+          <details class="program-card">
+            <summary><span class="program-icon icon-wing" aria-hidden="true"></span><h3>Аэродинамика</h3><span class="program-description">Изучать, как форма и баланс влияют на полёт.</span><span class="program-more">Пример проекта</span></summary>
+            <p>Собрать две модели планера с разной формой крыла и сравнить дальность полёта на испытательной площадке.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section center" id="center" aria-labelledby="center-title">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="eyebrow section-label">Будущий центр</p>
+          <h2 id="center-title">Задай курс <em>на высоту</em></h2>
+          <p>В центре школьники и студенты смогут проектировать модели, собирать их в мастерских и испытывать во дворе. Кафе и выставки на первом этаже будут открыты для всех.</p>
+        </div>
+        <div class="concept-photos">
+          <figure><img src="assets/workshop.webp" alt="Визуализация инженерной мастерской с рабочими столами и моделями" width="1400" height="783" loading="lazy"><figcaption>Инженерная мастерская · визуализация</figcaption></figure>
+          <figure><img src="assets/cafe.webp" alt="Визуализация кафе в историческом корпусе" width="1400" height="787" loading="lazy"><figcaption>Кафе на первом этаже · визуализация</figcaption></figure>
+        </div>
+
+        <div class="floor-section">
+          <div class="floor-heading">
+            <h3>Что на каждом этаже</h3>
+            <div class="switch floor-tabs" role="tablist" aria-label="Этажи здания" data-tabs>
+              <button id="floor-1-tab" type="button" aria-controls="floor-1">1 этаж</button>
+              <button id="floor-2-tab" type="button" aria-controls="floor-2">2 этаж</button>
+              <button id="floor-3-tab" type="button" aria-controls="floor-3">3 этаж</button>
+            </div>
+          </div>
+          <div class="floor-panel" id="floor-1" aria-labelledby="floor-1-tab">
+            <div>
+              <h4>Открытые пространства</h4>
+              <p>Кафе, выставочные залы, интерактивная экспозиция и зона ожидания. Проект предусматривает доступный учебный класс и универсальный санузел.</p>
+              <a class="text-link plan-link" href="assets/plan-1.webp" data-zoom="План первого этажа">Увеличить план</a>
+            </div>
+            <img src="assets/plan-1.webp" alt="Поэтажный план с кафе, выставками и учебным классом" width="1040" height="701" loading="lazy">
+          </div>
+          <div class="floor-panel" id="floor-2" aria-labelledby="floor-2-tab">
+            <div>
+              <h4>Лаборатории и мастерские</h4>
+              <p>Две лаборатории и две мастерские для сборки моделей и работы над инженерными проектами.</p>
+              <a class="text-link plan-link" href="assets/plan-2.webp" data-zoom="План второго этажа">Увеличить план</a>
+            </div>
+            <img src="assets/plan-2.webp" alt="План второго этажа с лабораториями и мастерскими" width="1400" height="921" loading="lazy">
+          </div>
+          <div class="floor-panel" id="floor-3" aria-labelledby="floor-3-tab">
+            <div>
+              <h4>Классы и лекторий</h4>
+              <p>Классы робототехники, электроники и 3D-моделирования, лаборатория аэродинамики и лекторий.</p>
+              <a class="text-link plan-link" href="assets/plan-3.webp" data-zoom="План третьего этажа">Увеличить план</a>
+            </div>
+            <img src="assets/plan-3.webp" alt="План третьего этажа с профильными классами и лекторием" width="1377" height="914" loading="lazy">
+          </div>
+        </div>
+
+        <div class="grounds">
+          <img src="assets/grounds.webp" alt="Генплан двора с площадкой для испытаний, зоной отдыха и парковкой" width="1312" height="1199" loading="lazy">
+          <div>
+            <p class="eyebrow section-label">Благоустройство</p>
+            <h3>Двор для испытаний и прогулок</h3>
+            <p>Рядом с площадкой для запуска моделей проект предусматривает зону отдыха с фонтаном и детскую площадку.</p>
+            <p class="survey"><strong>85%</strong><span>из 75 опрошенных жителей готовы пользоваться двором регулярно или время от времени</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section history" id="history" aria-labelledby="history-title">
+      <div class="shell">
+        <div class="history-grid">
+          <div class="history-copy">
+            <p class="eyebrow section-label">История места</p>
+            <h2 id="history-title">Школа, где учились <em>летать</em></h2>
+            <p>На Волковом поле испытывали аэростаты и готовили военных воздухоплавателей. Здесь учился Пётр Нестеров. Теперь команда предлагает вернуть одному из корпусов образовательную функцию и открыть в нём инженерные мастерские.</p>
+          </div>
+          <figure class="archive-figure">
+            <img src="assets/archive-balloon.webp" alt="Аэростат перед высоким ангаром на архивной фотографии" width="968" height="790" loading="lazy">
+            <figcaption>Аэростат в эллинге · архивное фото из материалов проекта</figcaption>
+          </figure>
+        </div>
+        <ol class="timeline" aria-label="История воздухоплавательной школы">
+          <li><strong>1885</strong><span>На Волковом поле учреждён Учебный воздухоплавательный парк.</span></li>
+          <li><strong>1887</strong><span>Построены деревянные ангары, казармы и учебные корпуса.</span></li>
+          <li><strong>1910–1912</strong><span>Формируется каменный ансамбль, в который входит жилой корпус.</span></li>
+          <li><strong>1926</strong><span>Офицерская воздухоплавательная школа расформирована.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section restoration" id="restoration" aria-labelledby="restoration-title">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="eyebrow section-label">Реставрация</p>
+          <h2 id="restoration-title">Как восстановить корпус</h2>
+          <p>Проект сохраняет исторические фасады, вальмовую крышу, парадную лестницу и печи-камины. Чтобы вернуть здание в эксплуатацию, команда предлагает усилить стены, заменить разрушенные перекрытия и подключить инженерные сети.</p>
+        </div>
+        <div class="compare">
+          <div class="switch compare-tabs" role="tablist" aria-label="Сравнение здания" data-tabs>
+            <button id="current-tab" type="button" aria-controls="current-panel">Состояние сейчас</button>
+            <button id="future-tab" type="button" aria-controls="future-panel">По проекту</button>
+          </div>
+          <figure class="compare-panel" id="current-panel" aria-labelledby="current-tab">
+            <img src="assets/current.webp" alt="Жилой корпус на Парковой улице до реставрации" width="1280" height="960" loading="lazy">
+            <figcaption>Жилой корпус · фотофиксация 2026 года</figcaption>
+          </figure>
+          <figure class="compare-panel" id="future-panel" aria-labelledby="future-tab">
+            <img src="assets/exterior.webp" alt="Проект восстановленного здания с озеленённым двором" width="1400" height="788" loading="lazy">
+            <figcaption>Здание и двор после реставрации · визуализация</figcaption>
+          </figure>
+        </div>
+        <div class="detail-grid">
+          <figure><img src="assets/facade-detail.webp" alt="Фрагмент исторического фасада здания" width="788" height="1057" loading="lazy"><figcaption>Фасад и оконные обрамления</figcaption></figure>
+          <figure><img src="assets/stucco.webp" alt="Деталь потолочной лепнины с розеткой" width="379" height="508" loading="lazy"><figcaption>Лепнина парадной лестницы</figcaption></figure>
+          <figure><img src="assets/fireplace.webp" alt="Историческая печь-камин с декоративным обрамлением" width="788" height="1057" loading="lazy"><figcaption>Печь-камин</figcaption></figure>
+          <figure><img src="assets/staircase.webp" alt="Лестничный марш с известняковыми ступенями" width="788" height="1057" loading="lazy"><figcaption>Известняковые ступени</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadmap" aria-labelledby="roadmap-title">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="eyebrow section-label">Реализация</p>
+          <h2 id="roadmap-title">Путь к открытию</h2>
+          <p>Сроки и бюджет — предварительная оценка команды по материалам студенческой концепции.</p>
+        </div>
+        <div class="roadmap-grid">
+          <div class="cost"><strong>140,9</strong><span>млн ₽</span><p>Сводная смета реставрации и приспособления</p></div>
+          <ol class="milestones">
+            <li><strong>2027</strong><span>Проектирование, экспертиза и согласование с КГИОП</span></li>
+            <li><strong>2028–2030</strong><span>Реставрация, приспособление здания и благоустройство двора</span></li>
+            <li><strong>Сентябрь 2030</strong><span>Открытие центра по плану проекта</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section materials" id="materials" aria-labelledby="materials-title">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="eyebrow section-label">IX Молодёжный форум «Наследие»</p>
+          <h2 id="materials-title">Материалы проекта</h2>
+        </div>
+        <div class="material-grid">
+          <a href="assets/presentation.pdf" class="material-card">
+            <span class="file-type">PDF · 10 СЛАЙДОВ</span>
+            <strong>Презентация</strong>
+            <span>История, реставрация, программа центра и экономика проекта</span>
+            <span class="text-link">Открыть презентацию</span>
+          </a>
+          <a href="assets/project-board.pdf" class="material-card">
+            <span class="file-type">PDF · 1 ЛИСТ</span>
+            <strong>Конкурсный планшет</strong>
+            <span>Генплан, поэтажные схемы, фасады, визуализации и фирменный стиль</span>
+            <span class="text-link">Открыть планшет</span>
+          </a>
+        </div>
+        <div class="team">
+          <h3>Команда № 10</h3>
+          <div>
+            <p>Афанасьев И. О., Бородулин Е. М., Григорьев И. А., Калиновский К. О., Мансуров Р. Д., Усов М. С., Шарифова С. Н., Рублёва Д. Э., Кремененко О. О.</p>
+            <p><strong>Научный руководитель</strong> — Зацепина А. И.</p>
+            <p class="institutions">СПбПУ Петра Великого · СПбГУПТД · Академия художеств имени Ильи Репина</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="brand" href="#top" aria-label="Формула Неба — в начало"><img src="assets/logo-light.webp" alt="" width="32" height="32"><span>Формула Неба</span></a>
+      <p>Санкт-Петербург · Парковая ул., 7Р</p>
+      <a class="footer-link" href="#top">К началу</a>
+    </div>
+  </footer>
+  <dialog class="plan-dialog" id="plan-dialog" aria-labelledby="plan-title">
+    <div class="dialog-bar"><h2 id="plan-title"></h2><form method="dialog"><button type="submit" autofocus>Закрыть</button></form></div>
+    <img id="plan-image" alt="">
+  </dialog>
+</body>
+</html>

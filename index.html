@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ec">
+  <meta name="description" content="«Формула Неба» — проект инженерной школы для детей 10–17 лет на Парковой улице в Санкт-Петербурге. Курсы, мастерские и онлайн-лаборатория.">
+  <meta property="og:title" content="Формула Неба">
+  <meta property="og:description" content="От эскиза до работающего прототипа. Четыре направления для школьников 10–17 лет.">
+  <meta property="og:image" content="assets/visit-range.webp">
+  <link rel="icon" href="assets/logo.webp" type="image/webp">
+  <link rel="preload" as="image" imagesrcset="assets/amber-glider-mobile.webp 768w, assets/amber-glider.webp 1536w" imagesizes="(max-width: 800px) 86vw, (max-width: 1380px) 58vw, 765px" fetchpriority="high">
+  <title>Формула Неба</title>
+  <link rel="preload" href="assets/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="site.min.css">
+  <script src="site.js" defer></script>
+</head>
+<body class="front-page">
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="header" id="top">
+    <div class="shell header-row">
+      <a class="brand" href="./" aria-label="Формула Неба — главная">
+        <img src="assets/logo.webp" alt="" width="39" height="39"><span>Формула Неба<small>ИНЖЕНЕРНАЯ ШКОЛА</small></span>
+      </a>
+      <button class="menu" type="button" aria-controls="navigation" aria-expanded="false" hidden>Меню</button>
+      <nav class="navigation" id="navigation" aria-label="Основная навигация">
+        <a href="#courses">Курсы</a><a href="#about">Как учимся</a><a href="#center">Пространство</a><a href="#lab">Лаборатория</a>
+        <a class="mobile-enroll" href="#enroll">Пробное занятие</a>
+      </nav>
+      <a class="button header-action" href="#enroll">Пробное занятие</a>
+    </div>
+    <div class="reading-progress" aria-hidden="true"></div>
+  </header>
+  <main id="main">
+    <section class="school-intro" aria-labelledby="hero-title">
+      <picture class="intro-sky" aria-hidden="true">
+        <source media="(max-width: 800px)" srcset="assets/flight-sky-mobile.webp">
+        <img src="assets/flight-sky.webp" alt="" width="1536" height="1024" fetchpriority="high">
+      </picture>
+      <div class="school-intro-grid shell">
+        <div class="intro-heading">
+          <p class="intro-location">Санкт-Петербург <span>Парковая ул., 7Р</span></p>
+          <h1 id="hero-title">От чертежа <em>до взлёта</em></h1>
+        </div>
+        <figure class="intro-flight">
+          <img src="assets/amber-glider.webp" srcset="assets/amber-glider-mobile.webp 768w, assets/amber-glider.webp 1536w" sizes="(max-width: 800px) 86vw, (max-width: 1380px) 58vw, 765px" alt="Деревянная модель планера с янтарными крыльями над облаками" width="1536" height="1024" fetchpriority="high">
+        </figure>
+        <div class="intro-copy">
+          <p class="intro-summary">Проект инженерной школы для детей 10–17&nbsp;лет. Роботы, 3D-печать, электроника и первые лётные испытания.</p>
+          <div class="intro-actions">
+            <a class="button intro-primary" href="#courses">Выбрать проект</a>
+            <a class="text-link" href="#lab" data-lab-jump="flight">Симулятор полёта</a>
+          </div>
+          <p class="intro-format">8&nbsp;занятий по 90&nbsp;минут · очно раз в&nbsp;неделю</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="school-preview shell" aria-labelledby="school-preview-title">
+        <div class="preview-copy">
+          <h2 id="school-preview-title">На Парковой</h2>
+          <p>В будущей школе можно будет собрать модель в мастерской и испытать её на полигоне во дворе.</p>
+          <a class="text-link" href="#center">Открыть виртуальную экскурсию</a>
+        </div>
+        <div class="intro-preview">
+          <div class="intro-tabs" role="tablist" aria-label="Визуализации будущей школы" data-atlas-tabs hidden>
+            <button id="intro-range-tab" type="button" aria-selected="true" aria-controls="intro-range"><img src="assets/visit-range-tab.webp" alt="" width="56" height="36">Полигон</button>
+            <button id="intro-workshop-tab" type="button" aria-selected="false" aria-controls="intro-workshop"><img src="assets/workshop-thumb.webp" alt="" width="56" height="36">Мастерская</button>
+            <button id="intro-yard-tab" type="button" aria-selected="false" aria-controls="intro-yard"><img src="assets/visit-courtyard-tab.webp" alt="" width="56" height="36">Двор</button>
+          </div>
+          <figure class="intro-figure" id="intro-range" aria-labelledby="intro-range-tab">
+            <img src="assets/visit-range.webp" srcset="assets/visit-range-mobile.webp 700w, assets/visit-range.webp 853w" sizes="(max-width: 800px) 92vw, (max-width: 1380px) 50vw, 680px" alt="Школьник запускает модель самолёта, одноклассники и наставник наблюдают" width="853" height="803" loading="lazy" decoding="async">
+            <figcaption>
+              <a href="#center" data-campus-visit="range">Испытательный полигон</a>
+              <span>Визуализация проекта</span>
+            </figcaption>
+          </figure>
+          <figure class="intro-figure" id="intro-workshop" aria-labelledby="intro-workshop-tab" hidden>
+            <img src="assets/workshop.webp" alt="Дети собирают модели за верстаками в светлой мастерской" width="1400" height="783" loading="lazy" decoding="async">
+            <figcaption>
+              <a href="#about">Как проходят занятия</a>
+              <span>Визуализация проекта</span>
+            </figcaption>
+          </figure>
+          <figure class="intro-figure" id="intro-yard" aria-labelledby="intro-yard-tab" hidden>
+            <img src="assets/hero.webp" srcset="assets/school-courtyard-mobile.webp 768w, assets/hero.webp 1672w" sizes="(max-width: 800px) 92vw, (max-width: 1380px) 50vw, 680px" alt="Двор школы с прогулочной дорожкой под деревьями и отреставрированным фасадом" width="1672" height="941" loading="lazy" decoding="async">
+            <figcaption>
+              <a href="#center" data-campus-visit="courtyard">Двор в виртуальной экскурсии</a>
+              <span>Визуализация проекта</span>
+            </figcaption>
+          </figure>
+        </div>
+    </section>
+    <nav class="intro-courses shell" aria-label="Быстрый переход к программе курса">
+      <a href="course.html?course=robotics" data-intro-course="robotics">Робототехника</a>
+      <a href="course.html?course=electronics" data-intro-course="electronics">Электроника</a>
+      <a href="course.html?course=modeling" data-intro-course="modeling">3D-моделирование</a>
+      <a href="course.html?course=flight" data-intro-course="flight">Аэродинамика</a>
+    </nav>
+
+    <section class="section course-editorial" id="courses" aria-labelledby="courses-title">
+      <div class="shell">
+      <div class="split-heading">
+        <h2 id="courses-title">Что ты соберёшь?</h2>
+        <p>У каждого курса свой итоговый проект. Фильтр по возрасту поможет выбрать подходящую программу.</p>
+      </div>
+      <div class="catalog-tools">
+        <div class="filters" aria-label="Возраст школьника" hidden>
+          <button type="button" data-age="all" aria-pressed="true">Все курсы</button>
+          <button type="button" data-age="10-13" aria-pressed="false">10–13 лет</button>
+          <button type="button" data-age="14-17" aria-pressed="false">14–17 лет</button>
+        </div>
+        <div class="catalog-actions">
+          <button type="button" class="button picker-button" data-course-picker hidden>Помочь с выбором</button>
+          <button type="button" class="button button-outline" id="compare-open" hidden disabled>Сравнить курсы <span id="compare-count">0 / 2</span></button>
+        </div>
+      </div>
+      <div id="course-grid" class="course-grid"></div>
+      <p id="result-status" class="sr-only" role="status"></p>
+      <noscript><p>Направления школы: робототехника, электроника, 3D-моделирование и аэродинамика.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section school-method" id="about" aria-labelledby="about-title">
+      <div class="shell method-grid" id="format">
+        <div class="method-copy">
+          <h2 id="about-title">Как проходят занятия</h2>
+          <p>За восемь встреч школьники проходят путь от эскиза до рабочего прототипа. На каждом этапе можно проверить свою идею и внести изменения.</p>
+          <ol class="method-steps">
+            <li><strong>Разбираем задачу</strong><span>Обсуждаем, что должна делать модель, рисуем эскиз и выбираем инструменты.</span></li>
+            <li><strong>Собираем прототип</strong><span>Работаем с деталями, схемами, кодом или 3D-моделью под руководством наставника.</span></li>
+            <li><strong>Проверяем результат</strong><span>Испытываем модель, находим, что можно улучшить, и показываем итоговый проект.</span></li>
+          </ol>
+          <a class="text-link" href="#lab">Попробовать онлайн-эксперимент</a>
+        </div>
+        <figure class="method-figure">
+          <img src="assets/workshop.webp" alt="Школьники собирают модели за верстаками в светлой мастерской" width="1400" height="783" loading="lazy" decoding="async">
+          <figcaption>Мастерская · визуализация проекта</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section shell building-tour" id="center" aria-labelledby="center-title">
+      <div class="split-heading">
+        <h2 id="center-title">Школа изнутри</h2>
+        <p>В здании на Парковой запланированы мастерские и лекторий. Во дворе будет площадка для испытаний моделей.</p>
+      </div>
+      <div class="atlas-tabs tour-tabs" role="tablist" aria-label="Режим экскурсии" data-atlas-tabs hidden>
+        <button id="tour-images-tab" type="button" aria-selected="true" aria-controls="tour-images">Визуализации</button>
+        <button id="tour-plans-tab" type="button" aria-selected="false" aria-controls="tour-plans">Планы и генплан</button>
+      </div>
+      <div id="tour-images" aria-labelledby="tour-images-tab">
+        <div class="campus-gallery">
+          <figure class="campus-figure">
+            <img id="campus-image" src="assets/hero.webp" srcset="assets/school-courtyard-mobile.webp 768w, assets/hero.webp 1672w" sizes="(max-width: 760px) 94vw, (max-width: 1340px) 62vw, 780px" data-orientation="landscape" width="1672" height="941" alt="Зелёный двор будущей школы на Парковой со школьниками и отреставрированным фасадом" loading="lazy" decoding="async">
+            <figcaption>Визуализация проекта</figcaption>
+          </figure>
+          <div class="campus-info">
+            <div class="campus-description" aria-live="polite" aria-atomic="true">
+              <p id="campus-location" class="eyebrow section-label">Парковая улица, 7Р</p>
+              <h3 id="campus-title">Двор школы</h3>
+              <p id="campus-text">Под деревьями вдоль обновлённого корпуса запланированы прогулочные дорожки и места для отдыха между занятиями.</p>
+            </div>
+            <div class="campus-actions" data-campus-controls hidden>
+              <button type="button" id="campus-plan" class="button button-primary">Открыть генплан</button>
+              <button type="button" id="campus-expand" class="button button-outline">Увеличить визуализацию</button>
+              <a id="campus-lab" href="#lab" class="text-link" hidden>Испытать планер онлайн</a>
+            </div>
+            <div class="campus-pagination" data-campus-controls hidden>
+              <button class="campus-nav" type="button" data-campus-step="-1">Назад</button>
+              <span id="campus-position">1 из 5</span>
+              <button class="campus-nav" type="button" data-campus-step="1">Далее</button>
+            </div>
+          </div>
+        </div>
+        <div class="campus-stops" aria-label="Остановки экскурсии" data-campus-controls hidden>
+          <button type="button" data-campus-stop="courtyard" aria-pressed="true"><img src="assets/visit-courtyard-thumb.webp" width="350" height="197" loading="lazy" alt=""><span>Двор школы</span></button>
+          <button type="button" data-campus-stop="lecture" aria-pressed="false"><img src="assets/visit-lecture-thumb.webp" width="350" height="260" loading="lazy" alt=""><span>Лекторий</span></button>
+          <button type="button" data-campus-stop="play" aria-pressed="false"><img src="assets/visit-play-thumb.webp" width="350" height="260" loading="lazy" alt=""><span>Площадка</span></button>
+          <button type="button" data-campus-stop="rest" aria-pressed="false"><img src="assets/visit-rest-thumb.webp" width="350" height="260" loading="lazy" alt=""><span>Зона отдыха</span></button>
+          <button type="button" data-campus-stop="range" aria-pressed="false"><img src="assets/visit-range-thumb.webp" width="350" height="260" loading="lazy" alt=""><span>Полигон</span></button>
+        </div>
+        <noscript><p class="campus-fallback">Другие визуализации проекта доступны отдельно.</p><ul><li><a href="assets/visit-lecture.webp">Лекторий</a></li><li><a href="assets/visit-play.webp">Площадка</a></li><li><a href="assets/visit-rest.webp">Зона отдыха</a></li><li><a href="assets/visit-range.webp">Испытательный полигон</a></li></ul></noscript>
+      </div>
+      <div id="tour-plans" aria-labelledby="tour-plans-tab" hidden>
+        <div class="atlas-tabs tour-tabs" role="tablist" aria-label="Зоны будущего центра" data-atlas-tabs hidden>
+          <button id="tour-yard-tab" type="button" aria-selected="true" aria-controls="tour-yard">Двор</button>
+          <button id="tour-one-tab" type="button" aria-selected="false" aria-controls="tour-one">1 этаж</button>
+          <button id="tour-two-tab" type="button" aria-selected="false" aria-controls="tour-two">2 этаж</button>
+          <button id="tour-three-tab" type="button" aria-selected="false" aria-controls="tour-three">3 этаж</button>
+        </div>
+        <div class="tour-view" id="tour-yard" aria-labelledby="tour-yard-tab">
+          <figure><img src="assets/grounds.webp" alt="Генплан двора с площадкой для испытаний моделей" width="1312" height="1199" loading="lazy"><figcaption>Генплан участка · конкурсный планшет</figcaption></figure>
+          <div>
+            <h3>Двор и полигон</h3><p>Рядом с учебным корпусом предусмотрены площадка для запуска моделей, зона отдыха с фонтаном и детская площадка.</p>
+            <a class="button button-outline" href="assets/grounds.webp" data-plan="Генплан участка">Увеличить генплан</a>
+          </div>
+        </div>
+        <div class="tour-view" id="tour-one" aria-labelledby="tour-one-tab" hidden>
+          <figure><img src="assets/plan-1.webp" alt="План первого этажа" width="1040" height="701" loading="lazy"><figcaption>План первого этажа · конкурсный планшет</figcaption></figure>
+          <div>
+            <h3>Кафе и выставки</h3><p>На первом этаже запланированы открытые выставочные залы, кафе, зона ожидания и доступный учебный класс.</p>
+            <a class="button button-outline" href="assets/plan-1.webp" data-plan="План первого этажа">Увеличить план</a>
+          </div>
+        </div>
+        <div class="tour-view" id="tour-two" aria-labelledby="tour-two-tab" hidden>
+          <figure><img src="assets/plan-2.webp" alt="План второго этажа" width="1400" height="921" loading="lazy"><figcaption>План второго этажа · конкурсный планшет</figcaption></figure>
+          <div>
+            <h3>Лаборатории и мастерские</h3><p>Две лаборатории и две мастерские для работы над инженерными проектами и сборки моделей.</p>
+            <a class="button button-outline" href="assets/plan-2.webp" data-plan="План второго этажа">Увеличить план</a>
+          </div>
+        </div>
+        <div class="tour-view" id="tour-three" aria-labelledby="tour-three-tab" hidden>
+          <figure><img src="assets/plan-3.webp" alt="План третьего этажа" width="1377" height="914" loading="lazy"><figcaption>План третьего этажа · конкурсный планшет</figcaption></figure>
+          <div>
+            <h3>Классы и лекторий</h3><p>Классы робототехники, электроники и 3D-моделирования, лаборатория аэродинамики и лекторий.</p>
+            <a class="button button-outline" href="assets/plan-3.webp" data-plan="План третьего этажа">Увеличить план</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lab-section" id="lab" aria-labelledby="lab-title">
+      <div class="shell">
+        <div class="lab-intro">
+          <div>
+            <h2 id="lab-title">Инженерная лаборатория онлайн</h2>
+          </div>
+          <p>Запустите планер, проведите робота по трассе, настройте датчик света или подберите размер детали.</p>
+        </div>
+        <div class="atlas-tabs lab-tabs" role="tablist" aria-label="Эксперименты" data-atlas-tabs hidden>
+          <button id="lab-flight-tab" type="button" aria-controls="flight-panel" aria-selected="true" data-lab="flight">Аэродинамика</button>
+          <button id="lab-rover-tab" type="button" aria-controls="rover-panel" aria-selected="false" data-lab="rover">Робототехника</button>
+          <button id="lab-light-tab" type="button" aria-controls="light-panel" aria-selected="false" data-lab="light">Электроника</button>
+          <button id="lab-fit-tab" type="button" aria-controls="fit-panel" aria-selected="false" data-lab="fit">3D-моделирование</button>
+        </div>
+        <div id="flight-panel" class="experiment" aria-labelledby="lab-flight-tab">
+          <div class="experiment-heading"><h3>Испытайте планер</h3><p>Измените крыло, высоту старта и ветер, а затем сравните два запуска.</p></div>
+          <div class="lab-grid" id="flight-lab" hidden>
+            <form class="lab-controls" id="flight-controls">
+              <fieldset>
+                <legend>Форма крыла</legend>
+                <div class="lab-wings">
+                  <label><input name="wing" type="radio" value="narrow" checked><span>Узкое</span></label>
+                  <label><input name="wing" type="radio" value="wide"><span>Широкое</span></label>
+                </div>
+              </fieldset>
+              <div class="lab-range">
+                <label for="launch-height">Высота старта</label>
+                <output for="launch-height" id="height-value" aria-live="off">3 м</output>
+                <input type="range" id="launch-height" name="height" min="1" max="6" step="0.5" value="3">
+              </div>
+              <div class="lab-range">
+                <label for="wind-speed">Скорость ветра</label>
+                <output for="wind-speed" id="wind-value" aria-live="off">Штиль</output>
+                <input type="range" id="wind-speed" name="wind" min="-2" max="2" step="1" value="0">
+                <div class="lab-scale" aria-hidden="true"><span>Встречный</span><span>Попутный</span></div>
+              </div>
+              <button class="button button-accent" type="submit">Запустить планер</button>
+            </form>
+            <div class="lab-visual">
+              <figure class="trajectory">
+                <canvas id="flight-chart" width="720" height="340" role="img" aria-label="Схема траектории планера. Результаты каждого запуска доступны ниже."></canvas>
+                <figcaption>Упрощённая модель полёта с постоянной скоростью снижения.</figcaption>
+              </figure>
+              <p id="flight-status" class="lab-status" role="status">Задайте условия и нажмите «Запустить планер».</p>
+              <ol class="flight-history" id="flight-history" aria-label="Последние два запуска" hidden></ol>
+              <button class="lab-reset" id="flight-reset" type="button" hidden>Сбросить результаты</button>
+              <a class="lab-link flight-visit" href="#center" data-campus-visit="range">Посмотреть испытательный полигон</a>
+            </div>
+          </div>
+        </div>
+        <div id="rover-panel" class="experiment" aria-labelledby="lab-rover-tab" hidden>
+          <div class="experiment-heading"><h3>Проведите робота по трассе</h3><p>Соберите последовательность команд и доберитесь до финиша в обход преград.</p></div>
+          <div class="mission-grid">
+            <div class="lab-controls rover-controls">
+              <div class="rover-directions" aria-label="Добавить команду движения">
+                <button class="lab-command" type="button" data-move="U">Вверх</button>
+                <button class="lab-command" type="button" data-move="L">Влево</button>
+                <button class="lab-command" type="button" data-move="R">Вправо</button>
+                <button class="lab-command" type="button" data-move="D">Вниз</button>
+              </div>
+              <div><p class="mission-label">Программа <span id="rover-count">0 / 16</span></p><ol class="rover-queue" id="rover-queue" aria-label="Команды робота"></ol></div>
+              <div class="mission-actions">
+                <button class="button button-accent" type="button" id="rover-run" disabled>Запустить робота</button>
+                <button class="lab-link" type="button" id="rover-undo" disabled>Убрать последнюю</button>
+                <button class="lab-link" type="button" id="rover-clear" disabled>Очистить</button>
+              </div>
+            </div>
+            <div class="mission-stage">
+              <div id="rover-board" class="rover-board" role="img" aria-label="Поле робота, 5 на 5 клеток"></div>
+              <div class="rover-legend"><span>■ Преграда</span><span>◉ Робот</span><span>◎ Финиш</span></div>
+              <p id="rover-status" class="lab-status" role="status">Робот на старте. Добавьте первую команду.</p>
+            </div>
+          </div>
+        </div>
+        <div id="light-panel" class="experiment" aria-labelledby="lab-light-tab" hidden>
+          <div class="experiment-heading"><h3>Настройте датчик света</h3><p>Установите порог включения. Лампа загорится, когда освещённость станет ниже порога.</p></div>
+          <div class="mission-grid">
+            <div class="lab-controls">
+              <div class="lab-range">
+                <label for="light-level">Освещённость</label>
+                <output id="light-value" for="light-level">65%</output>
+                <input id="light-level" type="range" min="0" max="100" value="65">
+                <div class="lab-scale" aria-hidden="true"><span>Темно</span><span>Светло</span></div>
+              </div>
+              <div class="lab-range">
+                <label for="light-threshold">Порог включения</label>
+                <output id="threshold-value" for="light-threshold">40%</output>
+                <input id="light-threshold" type="range" min="0" max="100" value="40">
+              </div>
+              <div class="mission-actions"><button class="lab-command" type="button" data-light-level="15">Ночь</button><button class="lab-command" type="button" data-light-level="85">День</button></div>
+            </div>
+            <div class="mission-stage sensor-stage">
+              <div id="sensor-illustration" class="sensor-illustration" aria-hidden="true"><div class="sensor-board"></div><div class="sensor-wire"></div><div class="lamp"><div></div></div></div>
+              <p id="light-status" class="lab-status" role="status">Лампа выключена.</p>
+              <a class="lab-link" href="course.html?course=electronics">Программа курса по электронике</a>
+            </div>
+          </div>
+        </div>
+        <div id="fit-panel" class="experiment" aria-labelledby="lab-fit-tab" hidden>
+          <div class="experiment-heading"><h3>Подгоните детали</h3><p>Штифт имеет диаметр 10,0 мм. Подберите отверстие, чтобы детали соединялись с зазором от 0,2 до 0,4 мм.</p></div>
+          <div class="mission-grid">
+            <div class="lab-controls">
+              <div class="lab-range">
+                <label for="hole-diameter">Диаметр отверстия</label>
+                <output id="hole-value" for="hole-diameter">9,8 мм</output>
+                <input id="hole-diameter" type="range" min="9" max="11" step="0.1" value="9.8">
+                <div class="lab-scale" aria-hidden="true"><span>9,0 мм</span><span>11,0 мм</span></div>
+              </div>
+              <button class="button button-accent" type="button" id="check-fit">Проверить посадку</button>
+            </div>
+            <div class="mission-stage">
+              <div class="fit-figure" aria-hidden="true">
+                <div class="fit-part"><div class="fit-hole"></div><span>Отверстие</span></div>
+                <div class="fit-part"><div class="fit-pin"></div><span>Штифт · 10,0 мм</span></div>
+              </div>
+              <p id="fit-status" class="lab-status" role="status">Выберите диаметр и проверьте посадку.</p>
+              <a class="lab-link" href="course.html?course=modeling">Программа курса по 3D-моделированию</a>
+            </div>
+          </div>
+        </div>
+        <noscript><p>Для запуска экспериментов включите JavaScript.</p></noscript>
+      </div>
+    </section>
+
+    <section class="enroll" id="enroll" aria-labelledby="enroll-title">
+      <div class="shell enroll-grid">
+        <div class="enroll-copy">
+          <p class="eyebrow section-label">Знакомство со школой</p>
+          <h2 id="enroll-title">Пробное занятие</h2>
+          <p>Выберите курс и возраст. На пробном занятии ребёнок познакомится с инструментами и выполнит первую практическую задачу по выбранному направлению.</p>
+          <div class="demo-note"><strong>Демо-запись</strong><span>Центр проектируется. Форма показывает, как будет устроена запись.</span></div>
+        </div>
+        <form class="form" id="enroll-form" method="post">
+          <fieldset disabled>
+          <div class="form-line">
+            <label>Курс<select name="course" required><option value="">Выберите направление</option></select></label>
+            <label>Возраст<select name="age" required><option value="">Выберите возраст</option><option value="10-13">10–13 лет</option><option value="14-17">14–17 лет</option></select></label>
+          </div>
+          <label>Имя родителя или взрослого<input name="name" type="text" required autocomplete="off" minlength="2" maxlength="80" placeholder="Как к вам обращаться"></label>
+          <label>Электронная почта<input name="email" type="email" required autocomplete="off" placeholder="example@email.ru" maxlength="160"></label>
+          <button class="button button-accent" type="submit">Проверить демо-запись</button>
+          <p class="form-help">В демо можно указать вымышленные контакты. Данные не отправляются.</p>
+          </fieldset>
+        </form>
+        <div class="form-confirmation" id="form-confirmation" hidden tabindex="-1">
+          <p class="eyebrow section-label">Демонстрация записи</p>
+          <h3>Пробная заявка заполнена</h3>
+          <p id="confirmation-details"></p>
+          <p>Это подтверждение демо-записи. Введённые контакты удалены из формы.</p>
+          <button class="button button-ghost" id="another-application" type="button">Заполнить ещё раз</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell faq" id="questions" aria-labelledby="questions-title">
+      <div><p class="eyebrow section-label">Родителям</p><h2 id="questions-title">Частые вопросы</h2></div>
+      <div class="questions">
+        <details><summary>Можно начать без опыта?</summary><p>Да. Программы рассчитаны на школьников, которые впервые работают с инструментами или кодом. На вводном занятии можно попробовать подходящую по возрасту задачу.</p></details>
+        <details><summary>Как часто проходят занятия?</summary><p>Плановый формат — восемь очных занятий по 90 минут, одно занятие в неделю. Расписание групп появится после объявления набора.</p></details>
+        <details><summary>Что понадобится на занятиях?</summary><p>Компьютеры, инструменты и материалы предусмотрены в мастерских. О необходимых вещах для конкретного курса школа сообщит перед началом занятий.</p></details>
+        <details><summary>Сколько стоит обучение?</summary><p>В финансовой модели заложен ориентир 16 500 ₽ за месяц обучения. Окончательную стоимость и условия пробного занятия утвердят перед набором.</p></details>
+        <details><summary>Когда откроется центр?</summary><p>По плану проекта открытие намечено на сентябрь 2030 года после реставрации корпуса. Сейчас доступна демонстрация записи и программ.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="shell footer-row">
+      <a class="brand" href="#top" aria-label="Формула Неба — в начало"><img src="assets/logo-light.webp" alt="" width="36" height="36"><span>Формула Неба<small>ИНЖЕНЕРНАЯ ШКОЛА</small></span></a>
+      <p>Санкт-Петербург, Парковая ул., 7Р<br><span>Проект инженерной школы</span></p>
+      <a class="text-link" href="project.html#materials">Материалы проекта</a>
+    </div>
+  </footer>
+  <dialog class="picker-dialog" id="course-picker" aria-labelledby="picker-title">
+    <div class="picker-header">
+      <h2 id="picker-title">Подобрать курс</h2>
+      <button type="button" id="close-picker" class="picker-close">Закрыть</button>
+    </div>
+    <form id="picker-form">
+      <fieldset>
+        <legend>Сколько лет школьнику?</legend>
+        <div class="picker-options age-options">
+          <label><input type="radio" name="age" value="10-13" required><span>10–13 лет</span></label>
+          <label><input type="radio" name="age" value="14-17" required><span>14–17 лет</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Что хочется попробовать?</legend>
+        <div class="picker-options">
+          <label><input type="radio" name="interest" value="robotics" required><span>Собрать робота</span></label>
+          <label><input type="radio" name="interest" value="electronics" required><span>Разобраться в схемах</span></label>
+          <label><input type="radio" name="interest" value="modeling" required><span>Напечатать деталь</span></label>
+          <label><input type="radio" name="interest" value="flight" required><span>Запустить планер</span></label>
+        </div>
+      </fieldset>
+      <button class="button button-primary" type="submit">Показать подходящий курс</button>
+    </form>
+    <div class="picker-result" id="picker-result" tabindex="-1" hidden>
+      <p class="eyebrow section-label">Подходящий курс</p>
+      <h3 id="picker-course"></h3>
+      <p id="picker-explanation"></p>
+      <div class="picker-actions">
+        <a class="button button-primary" id="picker-program">Программа курса</a>
+        <a class="text-link" id="picker-enroll">Попробовать записаться</a>
+      </div>
+      <button class="picker-close" type="button" id="picker-back">Изменить ответы</button>
+    </div>
+  </dialog>
+  <dialog class="picker-dialog atlas-dialog" id="compare-dialog" aria-labelledby="compare-title">
+    <div class="picker-header"><h2 id="compare-title">Сравнение курсов</h2><form method="dialog"><button type="submit" class="picker-close">Закрыть</button></form></div>
+    <div id="compare-content"></div>
+  </dialog>
+  <dialog class="picker-dialog atlas-dialog plan-atlas-dialog" id="atlas-plan" aria-labelledby="atlas-plan-title">
+    <div class="picker-header"><h2 id="atlas-plan-title">План</h2><form method="dialog"><button type="submit" class="picker-close">Закрыть</button></form></div>
+    <img id="atlas-plan-image" alt="">
+  </dialog>
+  <dialog id="campus-dialog" class="picker-dialog atlas-dialog campus-dialog" aria-labelledby="campus-dialog-title">
+    <div class="picker-header">
+      <h2 id="campus-dialog-title">Лекторий</h2>
+      <form method="dialog"><button class="picker-close" type="submit">Закрыть</button></form>
+    </div>
+    <figure><img id="campus-dialog-image" alt=""><figcaption>Визуализация проекта</figcaption></figure>
+    <div class="campus-pagination">
+      <button class="campus-nav" type="button" data-campus-step="-1">Назад</button>
+      <span id="campus-dialog-position">1 из 5</span>
+      <button class="campus-nav" type="button" data-campus-step="1">Далее</button>
+    </div>
+  </dialog>
+</body>
+</html>
